@@ -1,0 +1,128 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found ament_cmake_cppcheck: 0.12.11 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+-- Found ament_cmake_cpplint: 0.12.11 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+-- Found ament_cmake_uncrustify: 0.12.11 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /home/taka/miniconda3/envs/crazyswarm_simple/bin/python3 (found suitable version "3.10.16", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /home/taka/miniconda3/envs/crazyswarm_simple/lib/libpython3.10.so (found suitable version "3.10.16", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /home/taka/miniconda3/envs/crazyswarm_simple/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /home/taka/miniconda3/envs/crazyswarm_simple/include/python3.10
+-- Using PYTHON_LIBRARIES: /home/taka/miniconda3/envs/crazyswarm_simple/lib/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Using numpy include directory: /home/taka/.local/lib/python3.10/site-packages/numpy/core/include
+-- Found ament_cmake_flake8: 0.12.11 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+-- Found ament_cmake_pep257: 0.12.11 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+-- Configuring done
+[33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:166 (add_library):
+  Cannot generate a safe runtime search path for target
+  crazyflie_interfaces__rosidl_generator_py because files in some directories
+  may conflict with libraries in implicit directories:
+
+    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/taka/miniconda3/envs/crazyswarm_simple/lib
+
+  Some of these libraries may not be found correctly.
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:20 (rosidl_generate_interfaces)
+
+[0m
+[33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:226 (add_library):
+  Cannot generate a safe runtime search path for target
+  crazyflie_interfaces__rosidl_typesupport_fastrtps_c__pyext because files in
+  some directories may conflict with libraries in implicit directories:
+
+    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/taka/miniconda3/envs/crazyswarm_simple/lib
+
+  Some of these libraries may not be found correctly.
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:20 (rosidl_generate_interfaces)
+
+[0m
+[33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:226 (add_library):
+  Cannot generate a safe runtime search path for target
+  crazyflie_interfaces__rosidl_typesupport_introspection_c__pyext because
+  files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/taka/miniconda3/envs/crazyswarm_simple/lib
+
+  Some of these libraries may not be found correctly.
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:20 (rosidl_generate_interfaces)
+
+[0m
+[33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:226 (add_library):
+  Cannot generate a safe runtime search path for target
+  crazyflie_interfaces__rosidl_typesupport_c__pyext because files in some
+  directories may conflict with libraries in implicit directories:
+
+    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/taka/miniconda3/envs/crazyswarm_simple/lib
+
+  Some of these libraries may not be found correctly.
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:20 (rosidl_generate_interfaces)
+
+[0m
+-- Generating done
+-- Build files have been written to: /home/taka/crazyswarm_SimpleFlight/build/crazyflie_interfaces
+[  0%] [34m[1mGenerating C code for ROS interfaces[0m
+[  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  0%] Built target ament_cmake_python_symlink_crazyflie_interfaces
+Traceback (most recent call last):
+  File "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 8, in <module>
+    from rosidl_generator_c import generate_c
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_c/__init__.py", line 15, in <module>
+    from rosidl_cmake import convert_camel_case_to_lower_case_underscore
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 24, in <module>
+    from rosidl_parser.parser import parse_idl_file
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 20, in <module>
+    from lark import Lark
+ModuleNotFoundError: No module named 'lark'
+gmake[2]: *** [CMakeFiles/crazyflie_interfaces__rosidl_generator_c.dir/build.make:166: rosidl_generator_c/crazyflie_interfaces/msg/full_state.h] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:212: CMakeFiles/crazyflie_interfaces__rosidl_generator_c.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+Traceback (most recent call last):
+  File "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 8, in <module>
+    from rosidl_generator_cpp import generate_cpp
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py", line 17, in <module>
+    from rosidl_cmake import generate_files
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 24, in <module>
+    from rosidl_parser.parser import parse_idl_file
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 20, in <module>
+    from lark import Lark
+ModuleNotFoundError: No module named 'lark'
+gmake[2]: *** [CMakeFiles/crazyflie_interfaces__cpp.dir/build.make:257: rosidl_generator_cpp/crazyflie_interfaces/msg/full_state.hpp] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:265: CMakeFiles/crazyflie_interfaces__cpp.dir/all] Error 2
+running egg_info
+creating crazyflie_interfaces.egg-info
+writing crazyflie_interfaces.egg-info/PKG-INFO
+writing dependency_links to crazyflie_interfaces.egg-info/dependency_links.txt
+writing top-level names to crazyflie_interfaces.egg-info/top_level.txt
+writing manifest file 'crazyflie_interfaces.egg-info/SOURCES.txt'
+reading manifest file 'crazyflie_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'crazyflie_interfaces.egg-info/SOURCES.txt'
+[  0%] Built target ament_cmake_python_build_crazyflie_interfaces_egg
+gmake: *** [Makefile:146: all] Error 2

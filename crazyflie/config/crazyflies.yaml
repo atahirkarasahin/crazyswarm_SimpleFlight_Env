@@ -1,0 +1,88 @@
+# named list of all robots
+robots:
+  cf0:
+    enabled: true
+    uri: radio://0/80/2M/E7E7E7E7E7
+    initial_position: [0.0, 0.0, 0.0]
+    type: cf21  # see robot_types
+  payload:
+    enabled: true
+    #uri: none  # The payload is not a Crazyflie, so no URI is needed
+    initial_position: [0.0, 0.0, 0.0]  # Adjust this based on where the payload starts
+    type: payload_marker  # Defined below in robot_types
+    id: 255  # ID for the payload marker
+
+# Definition of the various robot types
+robot_types:
+  cf21:
+    motion_capture:
+      enabled: false
+      # only if enabled; see motion_capture.yaml
+      marker: mocap_deck
+      dynamics: default
+    big_quad: false
+    battery:
+      voltage_warning: 3.8  # V
+      voltage_critical: 3.7 # V
+  payload_marker:
+    connection: none  # The payload is not a Crazyflie, so no connection is needed  
+    motion_capture:
+      enabled: true
+      marker: default_single_marker  # Using single marker tracking for the payload
+      dynamics: default
+      
+# global settings for all robots
+all:
+  # firmware logging for all drones (use robot_types/type_name to set per type, or
+  # robots/drone_name to set per drone)
+  firmware_logging:
+    enabled: true
+    # default_topics:
+     # remove to disable default topic
+      # pose:
+      #   frequency: 100 # Hz
+    custom_topics:
+      # pose:
+      #   frequency: 100 # Hz
+      #   vars: ["stateEstimate.x", "stateEstimate.y", "stateEstimate.z",]
+      # quat:
+      #   frequency: 100 # Hz
+      #   vars: ["stateEstimate.qw", "stateEstimate.qx", "stateEstimate.qy", "stateEstimate.qz",]
+      # vel:
+      #   frequency: 100 # Hz
+      #   vars: ["stateEstimate.vx", "stateEstimate.vy", "stateEstimate.vz"]
+      # omega:
+      #   frequency: 100 # Hz
+      #   vars: ["gyro.x", "gyro.y", "gyro.z"]
+      # command_rpy:
+      #   frequency: 100
+      #   vars: ["controller.cmd_roll", "controller.cmd_pitch", "controller.cmd_yaw", "controller.cmd_thrust"]
+      real_rate:
+        frequency: 100
+        vars: ["controller.r_roll", "controller.r_pitch", "controller.r_yaw", "controller.actuatorThrust"]
+      target_rate:
+        frequency: 100
+        vars: ["controller.rollRate", "controller.pitchRate", "controller.yawRate", "controller.cmd_thrust"]
+
+  # firmware parameters for all drones (use robot_types/type_name to set per type, or
+  # robots/drone_name to set per drone)
+  firmware_params:
+    commander:
+      enHighLevel: 1
+    stabilizer:
+      estimator: 2 # 1: complementary, 2: kalman
+      controller: 1 # 1: PID, 2: mellinger
+    # ring:
+    #   effect: 16 # 6: double spinner, 7: solid color, 16: packetRate
+    #   solidBlue: 255 # if set to solid color
+    #   solidGreen: 0 # if set to solid color
+    #   solidRed: 0 # if set to solid color
+    #   headlightEnable: 0
+    locSrv:
+      extPosStdDev: 1e-3
+      extQuatStdDev: 0.5e-1
+    # kalman:
+    #   resetEstimation: 1
+  broadcasts:
+    num_repeats: 15 # number of times broadcast commands are repeated
+    delay_between_repeats_ms: 1 # delay in milliseconds between individual repeats

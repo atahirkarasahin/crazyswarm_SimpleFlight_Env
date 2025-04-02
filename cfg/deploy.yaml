@@ -1,0 +1,53 @@
+# hydra.job.chdir: false
+
+headless: true
+use_local_usd: false
+
+sim: ${task.sim}
+env: ${task.env}
+
+model_dir: null #/tmp/checkpoint_final.pt
+#model_dir: /home/taka/SimpleFlight/scripts/outputs/Hover-mappo/03-06_14-54/wandb/run-20250306_145434-g2sobma5/files/checkpoint_final.pt
+
+total_frames: 9000_000_000 #1000_000_000
+max_iters: -1
+eval_interval: -1
+save_interval: 100
+seed: 0
+
+viewer:
+  resolution: [960, 720]
+  # front
+  # eye: [0., 2.0, 10.0]
+  # lookat: [0., 0., 1.0]
+  eye: [0., 2.0, 2.5]
+  lookat: [0., 0., 1.0]
+
+wandb:
+  group: ${oc.select:..task.name}
+  run_name: hover
+  job_type: train
+  entity: chenjy
+  project: sim2real
+  mode: disabled
+  # mode: online # set to 'disabled' when debugging locally, online
+  run_id: 
+  monitor_gym: True
+  tags: 
+
+# wandb:
+#   group: ${oc.select:..task.name}
+#   run_name: ${oc.select:..task.name,test}-${oc.select:..algo.name,none}
+#   job_type: train
+#   entity: atahirkarasahin-necmettin-erbakan-university
+#   project: sim2real
+#   mode: disabled # set to 'disabled' when debugging locally
+#   run_id:
+#   monitor_gym: True
+#   tags:
+
+defaults:
+  - task: Track
+  #- task: Hover
+  - algo: mappo
+  - _self_

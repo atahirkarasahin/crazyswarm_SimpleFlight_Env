@@ -1,0 +1,1 @@
+/home/taka/crazyswarm_SimpleFlight/build/crazyflie_interfaces/rosidl_cmake/srv/RemoveLogging_Response.msg

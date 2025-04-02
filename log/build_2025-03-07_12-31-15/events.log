@@ -1,0 +1,160 @@
+[0.000000] (-) TimerEvent: {}
+[0.000189] (crazyflie_interfaces) JobQueued: {'identifier': 'crazyflie_interfaces', 'dependencies': OrderedDict()}
+[0.000434] (crazyflie) JobQueued: {'identifier': 'crazyflie', 'dependencies': OrderedDict([('crazyflie_interfaces', '/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces')])}
+[0.000531] (crazyflie_py) JobQueued: {'identifier': 'crazyflie_py', 'dependencies': OrderedDict([('crazyflie_interfaces', '/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces')])}
+[0.000583] (crazyflie_sim) JobQueued: {'identifier': 'crazyflie_sim', 'dependencies': OrderedDict([('crazyflie_interfaces', '/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces')])}
+[0.000602] (crazyflie_examples) JobQueued: {'identifier': 'crazyflie_examples', 'dependencies': OrderedDict([('crazyflie_interfaces', '/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces'), ('crazyflie_py', '/home/taka/crazyswarm_SimpleFlight/install/crazyflie_py')])}
+[0.000620] (crazyflie_interfaces) JobStarted: {'identifier': 'crazyflie_interfaces'}
+[0.005862] (crazyflie_interfaces) JobProgress: {'identifier': 'crazyflie_interfaces', 'progress': 'cmake'}
+[0.006171] (crazyflie_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces'], 'cwd': '/home/taka/crazyswarm_SimpleFlight/build/crazyflie_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(crazyswarm_simple)'), ('USER', 'taka'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('ISAACSIM_PATH', '/home/taka/.local/share/ov/pkg/isaac_sim-2022.2.0'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-12.4/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/taka/.mujoco/mjpro131/bin:/usr/lib/nvidia'), ('HOME', '/home/taka'), ('CONDA_SHLVL', '2'), ('OLDPWD', '/home/taka'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '2415'), ('SYSTEMD_EXEC_PID', '2872'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '21367'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'taka'), ('JOURNAL_STREAM', '8:3977'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'taka'), ('TERM', 'xterm-256color'), ('RMW_FASTRTPS_USE_SHM', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/taka/miniconda3/envs/crazyswarm_simple/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/taka/.local/bin:/usr/local/cuda-12.4/bin:/opt/ros/humble/bin:/home/taka/miniconda3/envs/crazyswarm_simple/bin:/home/taka/miniconda3/condabin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/taka/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/asistan:@/tmp/.ICE-unix/2849,unix/asistan:/tmp/.ICE-unix/2849'), ('INVOCATION_ID', '951b3d5a100d41878e4c0f25a6b3b848'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('MUJOCO_PY_MUJOCO_PATH', '/home/taka/.mujoco/mjpro131'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LD_PRELOAD', '/usr/lib/x86_64-linux-gnu/libstdc++.so.6'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('CONDA_PREFIX_1', '/home/taka/miniconda3'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/taka/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:755b1323-61eb-4340-ab8d-9b7d5e8b8fd2'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'crazyswarm_simple'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/taka/crazyswarm_SimpleFlight/build/crazyflie_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/taka/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/taka/crazyflie-firmware/build/:/home/taka/rllab:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('CONDA_PREFIX', '/home/taka/miniconda3/envs/crazyswarm_simple'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.014443] (crazyflie_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098841] (crazyflie_interfaces) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.099832] (-) TimerEvent: {}
+[0.102300] (crazyflie_interfaces) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.115922] (crazyflie_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.117178] (crazyflie_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.120415] (crazyflie_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.125335] (crazyflie_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.131841] (crazyflie_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.137648] (crazyflie_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.150656] (crazyflie_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.200053] (-) TimerEvent: {}
+[0.300307] (-) TimerEvent: {}
+[0.400600] (-) TimerEvent: {}
+[0.419621] (crazyflie_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.11 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[0.421026] (crazyflie_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.11 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[0.422512] (crazyflie_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.12.11 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)\n'}
+[0.424232] (crazyflie_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.500766] (-) TimerEvent: {}
+[0.600994] (-) TimerEvent: {}
+[0.701248] (-) TimerEvent: {}
+[0.740524] (crazyflie_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.801343] (-) TimerEvent: {}
+[0.854736] (crazyflie_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.872988] (crazyflie_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /home/taka/miniconda3/envs/crazyswarm_simple/bin/python3 (found suitable version "3.10.16", minimum required is "3.6") \n'}
+[0.874048] (crazyflie_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[0.893219] (crazyflie_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /home/taka/miniconda3/envs/crazyswarm_simple/lib/libpython3.10.so (found suitable version "3.10.16", minimum required is "3.5") \n'}
+[0.893361] (crazyflie_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /home/taka/miniconda3/envs/crazyswarm_simple/bin/python3\n'}
+[0.893428] (crazyflie_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /home/taka/miniconda3/envs/crazyswarm_simple/include/python3.10\n'}
+[0.893486] (crazyflie_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /home/taka/miniconda3/envs/crazyswarm_simple/lib/libpython3.10.so\n'}
+[0.901375] (-) TimerEvent: {}
+[0.911082] (crazyflie_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.001484] (-) TimerEvent: {}
+[1.084439] (crazyflie_interfaces) StdoutLine: {'line': b'-- Using numpy include directory: /home/taka/.local/lib/python3.10/site-packages/numpy/core/include\n'}
+[1.091329] (crazyflie_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.12.11 (/opt/ros/humble/share/ament_cmake_flake8/cmake)\n'}
+[1.092752] (crazyflie_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.12.11 (/opt/ros/humble/share/ament_cmake_pep257/cmake)\n'}
+[1.101555] (-) TimerEvent: {}
+[1.102257] (crazyflie_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.127600] (crazyflie_interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:166 (add_library):\n'}
+[1.127769] (crazyflie_interfaces) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target\n'}
+[1.127832] (crazyflie_interfaces) StderrLine: {'line': b'  crazyflie_interfaces__rosidl_generator_py because files in some directories\n'}
+[1.127888] (crazyflie_interfaces) StderrLine: {'line': b'  may conflict with libraries in implicit directories:\n'}
+[1.127941] (crazyflie_interfaces) StderrLine: {'line': b'\n'}
+[1.127994] (crazyflie_interfaces) StderrLine: {'line': b'    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[1.128053] (crazyflie_interfaces) StderrLine: {'line': b'      /home/taka/miniconda3/envs/crazyswarm_simple/lib\n'}
+[1.128104] (crazyflie_interfaces) StderrLine: {'line': b'\n'}
+[1.128155] (crazyflie_interfaces) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[1.128206] (crazyflie_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.128257] (crazyflie_interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[1.128309] (crazyflie_interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[1.128427] (crazyflie_interfaces) StderrLine: {'line': b'  CMakeLists.txt:20 (rosidl_generate_interfaces)\n'}
+[1.128492] (crazyflie_interfaces) StderrLine: {'line': b'\n'}
+[1.128520] (crazyflie_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[1.129493] (crazyflie_interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:226 (add_library):\n'}
+[1.129595] (crazyflie_interfaces) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target\n'}
+[1.129654] (crazyflie_interfaces) StderrLine: {'line': b'  crazyflie_interfaces__rosidl_typesupport_fastrtps_c__pyext because files in\n'}
+[1.129708] (crazyflie_interfaces) StderrLine: {'line': b'  some directories may conflict with libraries in implicit directories:\n'}
+[1.129760] (crazyflie_interfaces) StderrLine: {'line': b'\n'}
+[1.129811] (crazyflie_interfaces) StderrLine: {'line': b'    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[1.129862] (crazyflie_interfaces) StderrLine: {'line': b'      /home/taka/miniconda3/envs/crazyswarm_simple/lib\n'}
+[1.129913] (crazyflie_interfaces) StderrLine: {'line': b'\n'}
+[1.129963] (crazyflie_interfaces) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[1.130013] (crazyflie_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.130063] (crazyflie_interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[1.130113] (crazyflie_interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[1.130163] (crazyflie_interfaces) StderrLine: {'line': b'  CMakeLists.txt:20 (rosidl_generate_interfaces)\n'}
+[1.130216] (crazyflie_interfaces) StderrLine: {'line': b'\n'}
+[1.130265] (crazyflie_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[1.130799] (crazyflie_interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:226 (add_library):\n'}
+[1.130900] (crazyflie_interfaces) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target\n'}
+[1.130957] (crazyflie_interfaces) StderrLine: {'line': b'  crazyflie_interfaces__rosidl_typesupport_introspection_c__pyext because\n'}
+[1.131009] (crazyflie_interfaces) StderrLine: {'line': b'  files in some directories may conflict with libraries in implicit\n'}
+[1.131061] (crazyflie_interfaces) StderrLine: {'line': b'  directories:\n'}
+[1.131111] (crazyflie_interfaces) StderrLine: {'line': b'\n'}
+[1.131161] (crazyflie_interfaces) StderrLine: {'line': b'    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[1.131211] (crazyflie_interfaces) StderrLine: {'line': b'      /home/taka/miniconda3/envs/crazyswarm_simple/lib\n'}
+[1.131260] (crazyflie_interfaces) StderrLine: {'line': b'\n'}
+[1.131308] (crazyflie_interfaces) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[1.131367] (crazyflie_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.131419] (crazyflie_interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[1.131476] (crazyflie_interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[1.131526] (crazyflie_interfaces) StderrLine: {'line': b'  CMakeLists.txt:20 (rosidl_generate_interfaces)\n'}
+[1.131575] (crazyflie_interfaces) StderrLine: {'line': b'\n'}
+[1.131624] (crazyflie_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[1.131960] (crazyflie_interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:226 (add_library):\n'}
+[1.132056] (crazyflie_interfaces) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target\n'}
+[1.132113] (crazyflie_interfaces) StderrLine: {'line': b'  crazyflie_interfaces__rosidl_typesupport_c__pyext because files in some\n'}
+[1.132165] (crazyflie_interfaces) StderrLine: {'line': b'  directories may conflict with libraries in implicit directories:\n'}
+[1.132216] (crazyflie_interfaces) StderrLine: {'line': b'\n'}
+[1.132265] (crazyflie_interfaces) StderrLine: {'line': b'    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[1.132315] (crazyflie_interfaces) StderrLine: {'line': b'      /home/taka/miniconda3/envs/crazyswarm_simple/lib\n'}
+[1.132376] (crazyflie_interfaces) StderrLine: {'line': b'\n'}
+[1.132427] (crazyflie_interfaces) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[1.132477] (crazyflie_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.132526] (crazyflie_interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[1.132576] (crazyflie_interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[1.132625] (crazyflie_interfaces) StderrLine: {'line': b'  CMakeLists.txt:20 (rosidl_generate_interfaces)\n'}
+[1.132674] (crazyflie_interfaces) StderrLine: {'line': b'\n'}
+[1.132722] (crazyflie_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[1.136425] (crazyflie_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.143546] (crazyflie_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/taka/crazyswarm_SimpleFlight/build/crazyflie_interfaces\n'}
+[1.149227] (crazyflie_interfaces) CommandEnded: {'returncode': 0}
+[1.149666] (crazyflie_interfaces) JobProgress: {'identifier': 'crazyflie_interfaces', 'progress': 'build'}
+[1.149701] (crazyflie_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/taka/crazyswarm_SimpleFlight/build/crazyflie_interfaces', '--', '-j20', '-l20'], 'cwd': '/home/taka/crazyswarm_SimpleFlight/build/crazyflie_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(crazyswarm_simple)'), ('USER', 'taka'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('ISAACSIM_PATH', '/home/taka/.local/share/ov/pkg/isaac_sim-2022.2.0'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda-12.4/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/taka/.mujoco/mjpro131/bin:/usr/lib/nvidia'), ('HOME', '/home/taka'), ('CONDA_SHLVL', '2'), ('OLDPWD', '/home/taka'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '2415'), ('SYSTEMD_EXEC_PID', '2872'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '21367'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'taka'), ('JOURNAL_STREAM', '8:3977'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'taka'), ('TERM', 'xterm-256color'), ('RMW_FASTRTPS_USE_SHM', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/taka/miniconda3/envs/crazyswarm_simple/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/taka/.local/bin:/usr/local/cuda-12.4/bin:/opt/ros/humble/bin:/home/taka/miniconda3/envs/crazyswarm_simple/bin:/home/taka/miniconda3/condabin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/taka/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/asistan:@/tmp/.ICE-unix/2849,unix/asistan:/tmp/.ICE-unix/2849'), ('INVOCATION_ID', '951b3d5a100d41878e4c0f25a6b3b848'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('MUJOCO_PY_MUJOCO_PATH', '/home/taka/.mujoco/mjpro131'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LD_PRELOAD', '/usr/lib/x86_64-linux-gnu/libstdc++.so.6'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('CONDA_PREFIX_1', '/home/taka/miniconda3'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/taka/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:755b1323-61eb-4340-ab8d-9b7d5e8b8fd2'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'crazyswarm_simple'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/taka/crazyswarm_SimpleFlight/build/crazyflie_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/taka/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/taka/crazyflie-firmware/build/:/home/taka/rllab:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('CONDA_PREFIX', '/home/taka/miniconda3/envs/crazyswarm_simple'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.185803] (crazyflie_interfaces) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.195786] (crazyflie_interfaces) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.198899] (crazyflie_interfaces) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_symlink_crazyflie_interfaces\n'}
+[1.201675] (-) TimerEvent: {}
+[1.216370] (crazyflie_interfaces) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[1.216509] (crazyflie_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 8, in <module>\n'}
+[1.216575] (crazyflie_interfaces) StderrLine: {'line': b'    from rosidl_generator_c import generate_c\n'}
+[1.216628] (crazyflie_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_c/__init__.py", line 15, in <module>\n'}
+[1.216681] (crazyflie_interfaces) StderrLine: {'line': b'    from rosidl_cmake import convert_camel_case_to_lower_case_underscore\n'}
+[1.216732] (crazyflie_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 24, in <module>\n'}
+[1.216782] (crazyflie_interfaces) StderrLine: {'line': b'    from rosidl_parser.parser import parse_idl_file\n'}
+[1.216831] (crazyflie_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 20, in <module>\n'}
+[1.216881] (crazyflie_interfaces) StderrLine: {'line': b'    from lark import Lark\n'}
+[1.216931] (crazyflie_interfaces) StderrLine: {'line': b"ModuleNotFoundError: No module named 'lark'\n"}
+[1.220593] (crazyflie_interfaces) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/crazyflie_interfaces__rosidl_generator_c.dir/build.make:166: rosidl_generator_c/crazyflie_interfaces/msg/full_state.h] Error 1\n'}
+[1.220835] (crazyflie_interfaces) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:212: CMakeFiles/crazyflie_interfaces__rosidl_generator_c.dir/all] Error 2\n'}
+[1.220952] (crazyflie_interfaces) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[1.229723] (crazyflie_interfaces) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[1.229860] (crazyflie_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 8, in <module>\n'}
+[1.229919] (crazyflie_interfaces) StderrLine: {'line': b'    from rosidl_generator_cpp import generate_cpp\n'}
+[1.229972] (crazyflie_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py", line 17, in <module>\n'}
+[1.230024] (crazyflie_interfaces) StderrLine: {'line': b'    from rosidl_cmake import generate_files\n'}
+[1.230074] (crazyflie_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 24, in <module>\n'}
+[1.230123] (crazyflie_interfaces) StderrLine: {'line': b'    from rosidl_parser.parser import parse_idl_file\n'}
+[1.230173] (crazyflie_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 20, in <module>\n'}
+[1.230222] (crazyflie_interfaces) StderrLine: {'line': b'    from lark import Lark\n'}
+[1.230271] (crazyflie_interfaces) StderrLine: {'line': b"ModuleNotFoundError: No module named 'lark'\n"}
+[1.233949] (crazyflie_interfaces) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/crazyflie_interfaces__cpp.dir/build.make:257: rosidl_generator_cpp/crazyflie_interfaces/msg/full_state.hpp] Error 1\n'}
+[1.234031] (crazyflie_interfaces) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:265: CMakeFiles/crazyflie_interfaces__cpp.dir/all] Error 2\n'}
+[1.301936] (-) TimerEvent: {}
+[1.308023] (crazyflie_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[1.314676] (crazyflie_interfaces) StdoutLine: {'line': b'creating crazyflie_interfaces.egg-info\n'}
+[1.314886] (crazyflie_interfaces) StdoutLine: {'line': b'writing crazyflie_interfaces.egg-info/PKG-INFO\n'}
+[1.314958] (crazyflie_interfaces) StdoutLine: {'line': b'writing dependency_links to crazyflie_interfaces.egg-info/dependency_links.txt\n'}
+[1.315093] (crazyflie_interfaces) StdoutLine: {'line': b'writing top-level names to crazyflie_interfaces.egg-info/top_level.txt\n'}
+[1.315189] (crazyflie_interfaces) StdoutLine: {'line': b"writing manifest file 'crazyflie_interfaces.egg-info/SOURCES.txt'\n"}
+[1.334245] (crazyflie_interfaces) StdoutLine: {'line': b"reading manifest file 'crazyflie_interfaces.egg-info/SOURCES.txt'\n"}
+[1.334754] (crazyflie_interfaces) StdoutLine: {'line': b"writing manifest file 'crazyflie_interfaces.egg-info/SOURCES.txt'\n"}
+[1.352041] (crazyflie_interfaces) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_build_crazyflie_interfaces_egg\n'}
+[1.352979] (crazyflie_interfaces) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[1.354814] (crazyflie_interfaces) CommandEnded: {'returncode': 2}
+[1.359498] (crazyflie_interfaces) JobEnded: {'identifier': 'crazyflie_interfaces', 'rc': 2}
+[1.369838] (crazyflie) JobSkipped: {'identifier': 'crazyflie'}
+[1.369878] (crazyflie_py) JobSkipped: {'identifier': 'crazyflie_py'}
+[1.369896] (crazyflie_sim) JobSkipped: {'identifier': 'crazyflie_sim'}
+[1.369911] (crazyflie_examples) JobSkipped: {'identifier': 'crazyflie_examples'}
+[1.369926] (-) EventReactorShutdown: {}

@@ -1,0 +1,1120 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /home/taka/miniconda3/envs/crazyswarm_simple/bin/python3 (found version "3.10.16") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found tf2_ros: 0.25.9 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+-- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found crazyflie_interfaces: 2.0.0 (/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces/share/crazyflie_interfaces/cmake)
+-- Found motion_capture_tracking_interfaces: 1.0.5 (/opt/ros/humble/share/motion_capture_tracking_interfaces/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: program_options 
+-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+-- Configuring done
+[33mCMake Warning at CMakeLists.txt:34 (add_executable):
+  Cannot generate a safe runtime search path for target teleop because files
+  in some directories may conflict with libraries in implicit directories:
+
+    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/taka/miniconda3/envs/crazyswarm_simple/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at CMakeLists.txt:45 (add_executable):
+  Cannot generate a safe runtime search path for target crazyflie_server
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/taka/miniconda3/envs/crazyswarm_simple/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+-- Generating done
+-- Build files have been written to: /home/taka/crazyswarm_SimpleFlight/build/crazyflie
+[  2%] [32mBuilding CXX object deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/CMakeFiles/crazyflieLinkCpp.dir/src/USBDevice.cpp.o[0m
+[  5%] [32mBuilding CXX object deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/CMakeFiles/crazyflieLinkCpp.dir/src/Crazyradio.cpp.o[0m
+[  7%] [32mBuilding CXX object deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/CMakeFiles/crazyflieLinkCpp.dir/src/CrazyflieUSB.cpp.o[0m
+[ 10%] [32mBuilding CXX object deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/CMakeFiles/crazyflieLinkCpp.dir/src/Version.cpp.o[0m
+[ 12%] [32mBuilding CXX object deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/CMakeFiles/crazyflieLinkCpp.dir/src/CrazyflieUSBThread.cpp.o[0m
+[ 15%] [32mBuilding CXX object deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/CMakeFiles/crazyflieLinkCpp.dir/src/USBManager.cpp.o[0m
+[ 17%] [32mBuilding CXX object deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/CMakeFiles/crazyflieLinkCpp.dir/src/Connection.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop.cpp.o[0m
+[ 22%] [32mBuilding CXX object deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/CMakeFiles/crazyflieLinkCpp.dir/src/CrazyradioThread.cpp.o[0m
+[ 25%] [32m[1mLinking CXX static library libcrazyflieLinkCpp.a[0m
+[ 25%] Built target crazyflieLinkCpp
+[ 27%] [32mBuilding CXX object deps/crazyflie_tools/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/Crazyflie.cpp.o[0m
+[ 30%] [32mBuilding CXX object deps/crazyflie_tools/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/src/crtp.cpp.o[0m
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpSetpointRequest::crtpSetpointRequest(float, float, float, uint16_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:217:22[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::sendSetpoint(float, float, float, uint16_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:124:55[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpSetpointRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::sendSetpoint(float, float, float, uint16_t)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:124:23:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  124 |   crtpSetpointRequest [01;36m[Kreq[m[K(roll, pitch, yawrate, thrust);
+      |                       [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpStopRequest::crtpStopRequest()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:722:26[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::sendStop()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:130:19[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpStopRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::sendStop()[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:130:19:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  130 |   crtpStopRequest [01;36m[Kreq[m[K;
+      |                   [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpEmergencyStopRequest::crtpEmergencyStopRequest()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:637:26[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::emergencyStop()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:136:28[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpEmergencyStopRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::emergencyStop()[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:136:28:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  136 |   crtpEmergencyStopRequest [01;36m[Kreq[m[K;
+      |                            [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpEmergencyStopWatchdogRequest::crtpEmergencyStopWatchdogRequest()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:648:26[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::emergencyStopWatchdog()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:142:36[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpEmergencyStopWatchdogRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::emergencyStopWatchdog()[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:142:36:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  142 |   crtpEmergencyStopWatchdogRequest [01;36m[Kreq[m[K;
+      |                                    [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpPositionSetpointRequest::crtpPositionSetpointRequest(float, float, float, float)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:756:27[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::sendPositionSetpoint(float, float, float, float)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:152:47[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpPositionSetpointRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::sendPositionSetpoint(float, float, float, float)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:152:31:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  152 |   crtpPositionSetpointRequest [01;36m[Kreq[m[K(x, y, z, yaw);
+      |                               [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpHoverSetpointRequest::crtpHoverSetpointRequest(float, float, float, float)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:737:27[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::sendHoverSetpoint(float, float, float, float)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:162:58[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpHoverSetpointRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::sendHoverSetpoint(float, float, float, float)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:162:28:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  162 |   crtpHoverSetpointRequest [01;36m[Kreq[m[K(vx, vy, yawrate, zDistance);
+      |                            [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpFullStateSetpointRequest::crtpFullStateSetpointRequest(float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:778:27[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::sendFullStateSetpoint(float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:178:35[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpFullStateSetpointRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::sendFullStateSetpoint(float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:173:32:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  173 |   crtpFullStateSetpointRequest [01;36m[Kreq[m[K(
+      |                                [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpVelocityWorldSetpointRequest::crtpVelocityWorldSetpointRequest(float, float, float, float)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:804:27[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::sendVelocityWorldSetpoint(float, float, float, float)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:186:23[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpVelocityWorldSetpointRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::sendVelocityWorldSetpoint(float, float, float, float)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:185:36:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  185 |   crtpVelocityWorldSetpointRequest [01;36m[Kreq[m[K(
+      |                                    [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpNotifySetpointsStopRequest::crtpNotifySetpointsStopRequest(uint32_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:820:26[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::notifySetpointsStop(uint32_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:192:58[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpNotifySetpointsStopRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::notifySetpointsStop(uint32_t)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:192:34:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  192 |   crtpNotifySetpointsStopRequest [01;36m[Kreq[m[K(remainValidMillisecs);
+      |                                  [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpNrf51ResetInitRequest::crtpNrf51ResetInitRequest()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/crtpNRF51.h:32:27[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::reboot()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:257:29[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq1.crtpNrf51ResetInitRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::reboot()[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:257:29:[m[K [01;36m[Knote: [m[K‘[01m[Kreq1[m[K’ declared here
+  257 |   crtpNrf51ResetInitRequest [01;36m[Kreq1[m[K;
+      |                             [01;36m[K^~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpNrf51ResetRequest::crtpNrf51ResetRequest(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/crtpNRF51.h:63:27[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::reboot()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:259:50[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq2.crtpNrf51ResetRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::reboot()[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:259:25:[m[K [01;36m[Knote: [m[K‘[01m[Kreq2[m[K’ declared here
+  259 |   crtpNrf51ResetRequest [01;36m[Kreq2[m[K(/*bootToFirmware*/ 1);
+      |                         [01;36m[K^~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpNrf51SysOffRequest::crtpNrf51SysOffRequest()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/crtpNRF51.h:96:27[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::sysoff()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:320:26[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpNrf51SysOffRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::sysoff()[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:320:26:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  320 |   crtpNrf51SysOffRequest [01;36m[Kreq[m[K;
+      |                          [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpNrf51AllOffRequest::crtpNrf51AllOffRequest()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/crtpNRF51.h:80:27[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::alloff()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:333:26[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpNrf51AllOffRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::alloff()[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:333:26:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  333 |   crtpNrf51AllOffRequest [01;36m[Kreq[m[K;
+      |                          [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpNrf51SysOnRequest::crtpNrf51SysOnRequest()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/crtpNRF51.h:112:27[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::syson()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:342:25[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpNrf51SysOnRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::syson()[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:342:25:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  342 |   crtpNrf51SysOnRequest [01;36m[Kreq[m[K;
+      |                         [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpCommanderHighLevelSetGroupMaskRequest::crtpCommanderHighLevelSetGroupMaskRequest(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:835:23[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::setGroupMask(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1060:58[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpCommanderHighLevelSetGroupMaskRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::setGroupMask(uint8_t)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1060:45:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1060 |   crtpCommanderHighLevelSetGroupMaskRequest [01;36m[Kreq[m[K(groupMask);
+      |                                             [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpCommanderHighLevelTakeoffRequest::crtpCommanderHighLevelTakeoffRequest(uint8_t, float, float)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:850:24[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::takeoff(float, float, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1066:71[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpCommanderHighLevelTakeoffRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::takeoff(float, float, uint8_t)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1066:40:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1066 |   crtpCommanderHighLevelTakeoffRequest [01;36m[Kreq[m[K(groupMask, height, duration);
+      |                                        [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpCommanderHighLevelLandRequest::crtpCommanderHighLevelLandRequest(uint8_t, float, float)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:867:24[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::land(float, float, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1072:68[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpCommanderHighLevelLandRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::land(float, float, uint8_t)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1072:37:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1072 |   crtpCommanderHighLevelLandRequest [01;36m[Kreq[m[K(groupMask, height, duration);
+      |                                     [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpCommanderHighLevelStopRequest::crtpCommanderHighLevelStopRequest(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:882:23[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::stop(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1078:50[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpCommanderHighLevelStopRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::stop(uint8_t)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1078:37:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1078 |   crtpCommanderHighLevelStopRequest [01;36m[Kreq[m[K(groupMask);
+      |                                     [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpCommanderHighLevelGoToRequest::crtpCommanderHighLevelGoToRequest(uint8_t, bool, float, float, float, float, float)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:901:24[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::goTo(float, float, float, float, float, bool, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1084:84[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpCommanderHighLevelGoToRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::goTo(float, float, float, float, float, bool, uint8_t)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1084:37:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1084 |   crtpCommanderHighLevelGoToRequest [01;36m[Kreq[m[K(groupMask, relative, x, y, z, yaw, duration);
+      |                                     [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpCommanderHighLevelStartTrajectoryRequest::crtpCommanderHighLevelStartTrajectoryRequest(uint8_t, bool, bool, uint8_t, float)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:924:23[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::startTrajectory(uint8_t, float, bool, bool, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1123:106[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpCommanderHighLevelStartTrajectoryRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::startTrajectory(uint8_t, float, bool, bool, uint8_t)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1123:48:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1123 |   crtpCommanderHighLevelStartTrajectoryRequest [01;36m[Kreq[m[K(groupMask, relative, reversed, trajectoryId, timescale);
+      |                                                [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpLatencyMeasurementRequest::crtpLatencyMeasurementRequest(uint32_t, uint64_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:1019:25[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::triggerLatencyMeasurement()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1163:64[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpLatencyMeasurementRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::triggerLatencyMeasurement()[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1163:33:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1163 |   crtpLatencyMeasurementRequest [01;36m[Kreq[m[K(m_latencyCounter, timestamp);
+      |                                 [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpCommanderHighLevelTakeoffRequest::crtpCommanderHighLevelTakeoffRequest(uint8_t, float, float)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:850:24[m[K,
+    inlined from ‘[01m[Kvoid CrazyflieBroadcaster::takeoff(float, float, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1177:71[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpCommanderHighLevelTakeoffRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid CrazyflieBroadcaster::takeoff(float, float, uint8_t)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1177:40:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1177 |   crtpCommanderHighLevelTakeoffRequest [01;36m[Kreq[m[K(groupMask, height, duration);
+      |                                        [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpCommanderHighLevelLandRequest::crtpCommanderHighLevelLandRequest(uint8_t, float, float)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:867:24[m[K,
+    inlined from ‘[01m[Kvoid CrazyflieBroadcaster::land(float, float, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1183:68[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpCommanderHighLevelLandRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid CrazyflieBroadcaster::land(float, float, uint8_t)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1183:37:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1183 |   crtpCommanderHighLevelLandRequest [01;36m[Kreq[m[K(groupMask, height, duration);
+      |                                     [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpCommanderHighLevelStopRequest::crtpCommanderHighLevelStopRequest(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:882:23[m[K,
+    inlined from ‘[01m[Kvoid CrazyflieBroadcaster::stop(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1189:50[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpCommanderHighLevelStopRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid CrazyflieBroadcaster::stop(uint8_t)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1189:37:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1189 |   crtpCommanderHighLevelStopRequest [01;36m[Kreq[m[K(groupMask);
+      |                                     [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpCommanderHighLevelGoToRequest::crtpCommanderHighLevelGoToRequest(uint8_t, bool, float, float, float, float, float)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:901:24[m[K,
+    inlined from ‘[01m[Kvoid CrazyflieBroadcaster::goTo(float, float, float, float, float, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1196:80[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpCommanderHighLevelGoToRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid CrazyflieBroadcaster::goTo(float, float, float, float, float, uint8_t)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1196:37:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1196 |   crtpCommanderHighLevelGoToRequest [01;36m[Kreq[m[K(groupMask, true, x, y, z, yaw, duration);
+      |                                     [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpCommanderHighLevelStartTrajectoryRequest::crtpCommanderHighLevelStartTrajectoryRequest(uint8_t, bool, bool, uint8_t, float)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:924:23[m[K,
+    inlined from ‘[01m[Kvoid CrazyflieBroadcaster::startTrajectory(uint8_t, float, bool, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1208:102[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpCommanderHighLevelStartTrajectoryRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid CrazyflieBroadcaster::startTrajectory(uint8_t, float, bool, uint8_t)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1208:48:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1208 |   crtpCommanderHighLevelStartTrajectoryRequest [01;36m[Kreq[m[K(groupMask, true, reversed, trajectoryId, timescale);
+      |                                                [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpNotifySetpointsStopRequest::crtpNotifySetpointsStopRequest(uint32_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:820:26[m[K,
+    inlined from ‘[01m[Kvoid CrazyflieBroadcaster::notifySetpointsStop(uint32_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1214:58[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpNotifySetpointsStopRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid CrazyflieBroadcaster::notifySetpointsStop(uint32_t)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1214:34:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1214 |   crtpNotifySetpointsStopRequest [01;36m[Kreq[m[K(remainValidMillisecs);
+      |                                  [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpEmergencyStopRequest::crtpEmergencyStopRequest()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:637:26[m[K,
+    inlined from ‘[01m[Kvoid CrazyflieBroadcaster::emergencyStop()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1239:28[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpEmergencyStopRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid CrazyflieBroadcaster::emergencyStop()[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1239:28:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1239 |   crtpEmergencyStopRequest [01;36m[Kreq[m[K;
+      |                            [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpEmergencyStopWatchdogRequest::crtpEmergencyStopWatchdogRequest()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:648:26[m[K,
+    inlined from ‘[01m[Kvoid CrazyflieBroadcaster::emergencyStopWatchdog()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1245:36[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpEmergencyStopWatchdogRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid CrazyflieBroadcaster::emergencyStopWatchdog()[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1245:36:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1245 |   crtpEmergencyStopWatchdogRequest [01;36m[Kreq[m[K;
+      |                                    [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpFullStateSetpointRequest::crtpFullStateSetpointRequest(float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:778:27[m[K,
+    inlined from ‘[01m[Kvoid CrazyflieBroadcaster::sendFullStateSetpoint(float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1282:35[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpFullStateSetpointRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid CrazyflieBroadcaster::sendFullStateSetpoint(float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1277:32:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1277 |   crtpFullStateSetpointRequest [01;36m[Kreq[m[K(
+      |                                [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpLogResetRequest::crtpLogResetRequest()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:497:23[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::logReset()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:107:23[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Krequest.crtpLogResetRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::logReset()[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:107:23:[m[K [01;36m[Knote: [m[K‘[01m[Krequest[m[K’ declared here
+  107 |   crtpLogResetRequest [01;36m[Krequest[m[K;
+      |                       [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpNrf51GetVBatRequest::crtpNrf51GetVBatRequest()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/crtpNRF51.h:128:27[m[K,
+    inlined from ‘[01m[Kfloat Crazyflie::vbat()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:354:27[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpNrf51GetVBatRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kfloat Crazyflie::vbat()[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:354:27:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  354 |   crtpNrf51GetVBatRequest [01;36m[Kreq[m[K;
+      |                           [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpMemoryWriteRequest::crtpMemoryWriteRequest(uint8_t, uint32_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:362:23[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::uploadTrajectory(uint8_t, uint32_t, const std::vector<Crazyflie::poly4d>&)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1099:81[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpMemoryWriteRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::uploadTrajectory(uint8_t, uint32_t, const std::vector<Crazyflie::poly4d>&)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1099:32:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1099 |         crtpMemoryWriteRequest [01;36m[Kreq[m[K(entry.id, pieceOffset * sizeof(poly4d) + i*24);
+      |                                [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpCommanderHighLevelDefineTrajectoryRequest::crtpCommanderHighLevelDefineTrajectoryRequest(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:952:23[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::uploadTrajectory(uint8_t, uint32_t, const std::vector<Crazyflie::poly4d>&)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1107:69[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpCommanderHighLevelDefineTrajectoryRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::uploadTrajectory(uint8_t, uint32_t, const std::vector<Crazyflie::poly4d>&)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1107:53:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1107 |       crtpCommanderHighLevelDefineTrajectoryRequest [01;36m[Kreq[m[K(trajectoryId);
+      |                                                     [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpParamWriteV2Request<T>::crtpParamWriteV2Request(uint16_t, const T&) [with T = unsigned char][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:199:35[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::setParam(uint16_t, const Crazyflie::ParamValue&)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:911:70[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpParamWriteV2Request<unsigned char>::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::setParam(uint16_t, const Crazyflie::ParamValue&)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:911:46:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  911 |             crtpParamWriteV2Request<uint8_t> [01;36m[Kreq[m[K(id, value.valueUint8);
+      |                                              [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpParamWriteV2Request<T>::crtpParamWriteV2Request(uint16_t, const T&) [with T = signed char][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:199:35[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::setParam(uint16_t, const Crazyflie::ParamValue&)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:917:68[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpParamWriteV2Request<signed char>::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::setParam(uint16_t, const Crazyflie::ParamValue&)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:917:45:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  917 |             crtpParamWriteV2Request<int8_t> [01;36m[Kreq[m[K(id, value.valueInt8);
+      |                                             [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpParamWriteV2Request<T>::crtpParamWriteV2Request(uint16_t, const T&) [with T = short unsigned int][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:199:35[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::setParam(uint16_t, const Crazyflie::ParamValue&)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:923:72[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpParamWriteV2Request<short unsigned int>::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::setParam(uint16_t, const Crazyflie::ParamValue&)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:923:47:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  923 |             crtpParamWriteV2Request<uint16_t> [01;36m[Kreq[m[K(id, value.valueUint16);
+      |                                               [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpParamWriteV2Request<T>::crtpParamWriteV2Request(uint16_t, const T&) [with T = short int][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:199:35[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::setParam(uint16_t, const Crazyflie::ParamValue&)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:929:70[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpParamWriteV2Request<short int>::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::setParam(uint16_t, const Crazyflie::ParamValue&)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:929:46:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  929 |             crtpParamWriteV2Request<int16_t> [01;36m[Kreq[m[K(id, value.valueInt16);
+      |                                              [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpParamWriteV2Request<T>::crtpParamWriteV2Request(uint16_t, const T&) [with T = unsigned int][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:199:35[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::setParam(uint16_t, const Crazyflie::ParamValue&)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:935:72[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpParamWriteV2Request<unsigned int>::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::setParam(uint16_t, const Crazyflie::ParamValue&)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:935:47:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  935 |             crtpParamWriteV2Request<uint32_t> [01;36m[Kreq[m[K(id, value.valueUint32);
+      |                                               [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpParamWriteV2Request<T>::crtpParamWriteV2Request(uint16_t, const T&) [with T = int][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:199:35[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::setParam(uint16_t, const Crazyflie::ParamValue&)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:941:70[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpParamWriteV2Request<int>::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::setParam(uint16_t, const Crazyflie::ParamValue&)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:941:46:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  941 |             crtpParamWriteV2Request<int32_t> [01;36m[Kreq[m[K(id, value.valueInt32);
+      |                                              [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpParamWriteV2Request<T>::crtpParamWriteV2Request(uint16_t, const T&) [with T = float][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:199:35[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::setParam(uint16_t, const Crazyflie::ParamValue&)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:947:68[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpParamWriteV2Request<float>::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::setParam(uint16_t, const Crazyflie::ParamValue&)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:947:44:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  947 |             crtpParamWriteV2Request<float> [01;36m[Kreq[m[K(id, value.valueFloat);
+      |                                            [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpExternalPositionPacked::crtpExternalPositionPacked()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:612:26[m[K,
+    inlined from ‘[01m[Kvoid CrazyflieBroadcaster::sendExternalPositions(const std::vector<CrazyflieBroadcaster::externalPosition>&)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1221:30[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpExternalPositionPacked::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid CrazyflieBroadcaster::sendExternalPositions(const std::vector<CrazyflieBroadcaster::externalPosition>&)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1221:30:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1221 |   crtpExternalPositionPacked [01;36m[Kreq[m[K;
+      |                              [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpExternalPosePacked::crtpExternalPosePacked()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:695:26[m[K,
+    inlined from ‘[01m[Kvoid CrazyflieBroadcaster::sendExternalPoses(const std::vector<CrazyflieBroadcaster::externalPose>&)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1252:26[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpExternalPosePacked::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid CrazyflieBroadcaster::sendExternalPoses(const std::vector<CrazyflieBroadcaster::externalPose>&)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1252:26:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1252 |   crtpExternalPosePacked [01;36m[Kreq[m[K;
+      |                          [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpMemoryGetNumberRequest::crtpMemoryGetNumberRequest()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:233:21[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::requestMemoryToc()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:860:30[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpMemoryGetNumberRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::requestMemoryToc()[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:860:30:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  860 |   crtpMemoryGetNumberRequest [01;36m[Kreq[m[K;
+      |                              [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpMemoryGetInfoRequest::crtpMemoryGetInfoRequest(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:260:23[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::requestMemoryToc()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:872:35[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpMemoryGetInfoRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::requestMemoryToc()[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:872:30:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  872 |     crtpMemoryGetInfoRequest [01;36m[Kreq[m[K(i);
+      |                              [01;36m[K^~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpMemoryReadRequest::crtpMemoryReadRequest(uint8_t, uint32_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:306:23[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::readUSDLogFile(std::vector<unsigned char>&)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1137:55[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpMemoryReadRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:[m[K In member function ‘[01m[Kvoid Crazyflie::readUSDLogFile(std::vector<unsigned char>&)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/src/Crazyflie.cpp:1137:31:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+ 1137 |         crtpMemoryReadRequest [01;36m[Kreq[m[K(entry.id, i*24, size);
+      |                               [01;36m[K^~~[m[K
+[ 32%] [32m[1mLinking CXX static library libcrazyflie_cpp.a[0m
+[ 32%] Built target crazyflie_cpp
+[ 35%] [32mBuilding CXX object deps/crazyflie_tools/CMakeFiles/battery.dir/src/battery.cpp.o[0m
+[ 37%] [32mBuilding CXX object deps/crazyflie_tools/CMakeFiles/listParams.dir/src/listParams.cpp.o[0m
+[ 40%] [32mBuilding CXX object deps/crazyflie_tools/CMakeFiles/listMemories.dir/src/listMemories.cpp.o[0m
+[ 42%] [32mBuilding CXX object deps/crazyflie_tools/CMakeFiles/reboot.dir/src/reboot.cpp.o[0m
+[ 45%] [32mBuilding CXX object deps/crazyflie_tools/CMakeFiles/listLogVariables.dir/src/listLogVariables.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/crazyflie_server.dir/src/crazyflie_server.cpp.o[0m
+[ 50%] [32mBuilding CXX object deps/crazyflie_tools/CMakeFiles/scan.dir/src/scan.cpp.o[0m
+[ 52%] [32mBuilding CXX object deps/crazyflie_tools/CMakeFiles/setParam.dir/src/setParam.cpp.o[0m
+[ 65%] [32mBuilding CXX object deps/crazyflie_tools/CMakeFiles/downloadUSDLogfile.dir/src/downloadUSDLogfile.cpp.o[0m
+[ 65%] [32mBuilding CXX object deps/crazyflie_tools/CMakeFiles/version.dir/src/version.cpp.o[0m
+[ 65%] [32mBuilding CXX object deps/crazyflie_tools/CMakeFiles/comCheck.dir/src/comCheck.cpp.o[0m
+[ 65%] [32mBuilding CXX object deps/crazyflie_tools/CMakeFiles/log.dir/src/log.cpp.o[0m
+[ 65%] [32mBuilding CXX object deps/crazyflie_tools/CMakeFiles/console.dir/src/console.cpp.o[0m
+[ 67%] [32m[1mLinking CXX executable listMemories[0m
+[ 67%] Built target listMemories
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/setParam.cpp:4[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpParamSetByNameRequest<T>::crtpParamSetByNameRequest(const string&, const string&, const T&) [with T = unsigned char][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:146:64[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::setParamByName(const string&, const string&, const T&) [with T = unsigned char][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:258:34[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Krequest.crtpParamSetByNameRequest<unsigned char>::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/setParam.cpp:4[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:[m[K In member function ‘[01m[Kvoid Crazyflie::setParamByName(const string&, const string&, const T&) [with T = unsigned char][m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:258:34:[m[K [01;36m[Knote: [m[K‘[01m[Krequest[m[K’ declared here
+  258 |     crtpParamSetByNameRequest<T> [01;36m[Krequest[m[K(group, name, value);
+      |                                  [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/setParam.cpp:4[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpParamSetByNameRequest<T>::crtpParamSetByNameRequest(const string&, const string&, const T&) [with T = signed char][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:146:64[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::setParamByName(const string&, const string&, const T&) [with T = signed char][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:258:34[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Krequest.crtpParamSetByNameRequest<signed char>::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/setParam.cpp:4[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:[m[K In member function ‘[01m[Kvoid Crazyflie::setParamByName(const string&, const string&, const T&) [with T = signed char][m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:258:34:[m[K [01;36m[Knote: [m[K‘[01m[Krequest[m[K’ declared here
+  258 |     crtpParamSetByNameRequest<T> [01;36m[Krequest[m[K(group, name, value);
+      |                                  [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/setParam.cpp:4[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpParamSetByNameRequest<T>::crtpParamSetByNameRequest(const string&, const string&, const T&) [with T = short unsigned int][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:146:64[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::setParamByName(const string&, const string&, const T&) [with T = short unsigned int][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:258:34[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Krequest.crtpParamSetByNameRequest<short unsigned int>::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/setParam.cpp:4[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:[m[K In member function ‘[01m[Kvoid Crazyflie::setParamByName(const string&, const string&, const T&) [with T = short unsigned int][m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:258:34:[m[K [01;36m[Knote: [m[K‘[01m[Krequest[m[K’ declared here
+  258 |     crtpParamSetByNameRequest<T> [01;36m[Krequest[m[K(group, name, value);
+      |                                  [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/log.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpLogStartRequest::crtpLogStartRequest(uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:472:23[m[K,
+    inlined from ‘[01m[Kvoid LogBlockGeneric::start(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:638:45[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Krequest.crtpLogStartRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/log.cpp:5[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:[m[K In member function ‘[01m[Kvoid LogBlockGeneric::start(uint8_t)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:638:25:[m[K [01;36m[Knote: [m[K‘[01m[Krequest[m[K’ declared here
+  638 |     crtpLogStartRequest [01;36m[Krequest[m[K(m_id, period);
+      |                         [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/setParam.cpp:4[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpParamSetByNameRequest<T>::crtpParamSetByNameRequest(const string&, const string&, const T&) [with T = short int][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:146:64[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::setParamByName(const string&, const string&, const T&) [with T = short int][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:258:34[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Krequest.crtpParamSetByNameRequest<short int>::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/setParam.cpp:4[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:[m[K In member function ‘[01m[Kvoid Crazyflie::setParamByName(const string&, const string&, const T&) [with T = short int][m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:258:34:[m[K [01;36m[Knote: [m[K‘[01m[Krequest[m[K’ declared here
+  258 |     crtpParamSetByNameRequest<T> [01;36m[Krequest[m[K(group, name, value);
+      |                                  [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/log.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpLogStopRequest::crtpLogStopRequest(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:485:23[m[K,
+    inlined from ‘[01m[Kvoid LogBlockGeneric::stop()[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:651:36[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Krequest.crtpLogStopRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/log.cpp:5[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:[m[K In member function ‘[01m[Kvoid LogBlockGeneric::stop()[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:651:24:[m[K [01;36m[Knote: [m[K‘[01m[Krequest[m[K’ declared here
+  651 |     crtpLogStopRequest [01;36m[Krequest[m[K(m_id);
+      |                        [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/setParam.cpp:4[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpParamSetByNameRequest<T>::crtpParamSetByNameRequest(const string&, const string&, const T&) [with T = unsigned int][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:146:64[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::setParamByName(const string&, const string&, const T&) [with T = unsigned int][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:258:34[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Krequest.crtpParamSetByNameRequest<unsigned int>::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/setParam.cpp:4[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:[m[K In member function ‘[01m[Kvoid Crazyflie::setParamByName(const string&, const string&, const T&) [with T = unsigned int][m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:258:34:[m[K [01;36m[Knote: [m[K‘[01m[Krequest[m[K’ declared here
+  258 |     crtpParamSetByNameRequest<T> [01;36m[Krequest[m[K(group, name, value);
+      |                                  [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/setParam.cpp:4[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpParamSetByNameRequest<T>::crtpParamSetByNameRequest(const string&, const string&, const T&) [with T = int][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:146:64[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::setParamByName(const string&, const string&, const T&) [with T = int][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:258:34[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Krequest.crtpParamSetByNameRequest<int>::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/setParam.cpp:4[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:[m[K In member function ‘[01m[Kvoid Crazyflie::setParamByName(const string&, const string&, const T&) [with T = int][m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:258:34:[m[K [01;36m[Knote: [m[K‘[01m[Krequest[m[K’ declared here
+  258 |     crtpParamSetByNameRequest<T> [01;36m[Krequest[m[K(group, name, value);
+      |                                  [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/setParam.cpp:4[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpParamSetByNameRequest<T>::crtpParamSetByNameRequest(const string&, const string&, const T&) [with T = float][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:146:64[m[K,
+    inlined from ‘[01m[Kvoid Crazyflie::setParamByName(const string&, const string&, const T&) [with T = float][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:258:34[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Krequest.crtpParamSetByNameRequest<float>::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/setParam.cpp:4[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:[m[K In member function ‘[01m[Kvoid Crazyflie::setParamByName(const string&, const string&, const T&) [with T = float][m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:258:34:[m[K [01;36m[Knote: [m[K‘[01m[Krequest[m[K’ declared here
+  258 |     crtpParamSetByNameRequest<T> [01;36m[Krequest[m[K(group, name, value);
+      |                                  [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/log.cpp:5[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpLogCreateBlockV2Request::crtpLogCreateBlockV2Request(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:452:23[m[K,
+    inlined from ‘[01m[KLogBlockGeneric::LogBlockGeneric(Crazyflie*, const std::vector<std::__cxx11::basic_string<char> >&, void*, std::function<void(unsigned int, const std::vector<float>*, void*)>&)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:585:41[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpLogCreateBlockV2Request::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/log.cpp:5[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:[m[K In constructor ‘[01m[KLogBlockGeneric::LogBlockGeneric(Crazyflie*, const std::vector<std::__cxx11::basic_string<char> >&, void*, std::function<void(unsigned int, const std::vector<float>*, void*)>&)[m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:585:33:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  585 |     crtpLogCreateBlockV2Request [01;36m[Kreq[m[K(m_id);
+      |                                 [01;36m[K^~~[m[K
+[ 70%] [32m[1mLinking CXX executable version[0m
+[ 70%] Built target version
+[ 72%] [32m[1mLinking CXX executable comCheck[0m
+[ 75%] [32m[1mLinking CXX executable listLogVariables[0m
+[ 75%] Built target comCheck
+[ 75%] Built target listLogVariables
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/battery.cpp:6[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpLogCreateBlockV2Request::crtpLogCreateBlockV2Request(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:452:23[m[K,
+    inlined from ‘[01m[KLogBlock<T>::LogBlock(Crazyflie*, std::__cxx11::list<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, std::function<void(unsigned int, const T*)>&) [with T = log][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:491:33[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreq.crtpLogCreateBlockV2Request::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/battery.cpp:6[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:[m[K In constructor ‘[01m[KLogBlock<T>::LogBlock(Crazyflie*, std::__cxx11::list<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, std::function<void(unsigned int, const T*)>&) [with T = log][m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:491:33:[m[K [01;36m[Knote: [m[K‘[01m[Kreq[m[K’ declared here
+  491 |     crtpLogCreateBlockV2Request [01;36m[Kreq[m[K(m_id);
+      |                                 [01;36m[K^~~[m[K
+[ 77%] [32m[1mLinking CXX executable scan[0m
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/battery.cpp:6[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpLogStartRequest::crtpLogStartRequest(uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:472:23[m[K,
+    inlined from ‘[01m[Kvoid LogBlock<T>::start(uint8_t) [with T = log][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:529:25[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Krequest.crtpLogStartRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/battery.cpp:6[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:[m[K In member function ‘[01m[Kvoid LogBlock<T>::start(uint8_t) [with T = log][m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:529:25:[m[K [01;36m[Knote: [m[K‘[01m[Krequest[m[K’ declared here
+  529 |     crtpLogStartRequest [01;36m[Krequest[m[K(m_id, period);
+      |                         [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:10[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:5[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:8[m[K,
+                 from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/battery.cpp:6[m[K:
+In function ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::setBitBieldValue(T&, T) [with T = unsigned char; long unsigned int Index = 4; long unsigned int Bits = 4][m[K’,
+    inlined from ‘[01m[Kvoid bitcraze::crazyflieLinkCpp::Packet::setPort(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:83:36[m[K,
+    inlined from ‘[01m[Kbitcraze::crazyflieLinkCpp::Packet::Packet(uint8_t, uint8_t, uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/Packet.hpp:50:12[m[K,
+    inlined from ‘[01m[KcrtpLogStopRequest::crtpLogStopRequest(uint8_t)[m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/crtp.h:485:23[m[K,
+    inlined from ‘[01m[Kvoid LogBlock<T>::stop() [with T = log][m[K’ at [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:542:24[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/crazyflie-link-cpp/include/crazyflieLinkCpp/utils.hpp:10:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Krequest.crtpLogStopRequest::<unnamed>.bitcraze::crazyflieLinkCpp::Packet::data_.std::array<unsigned char, 32>::_M_elems[0][m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+   10 |     ref = [01;35m[K(ref & ~(mask << Index))[m[K | ((new_val & mask) << Index);
+      |           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/src/battery.cpp:6[m[K:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:[m[K In member function ‘[01m[Kvoid LogBlock<T>::stop() [with T = log][m[K’:
+[01m[K/home/taka/crazyswarm_SimpleFlight/crazyflie/deps/crazyflie_tools/crazyflie_cpp/include/crazyflie_cpp/Crazyflie.h:542:24:[m[K [01;36m[Knote: [m[K‘[01m[Krequest[m[K’ declared here
+  542 |     crtpLogStopRequest [01;36m[Krequest[m[K(m_id);
+      |                        [01;36m[K^~~~~~~[m[K
+[ 77%] Built target scan
+[ 80%] [32m[1mLinking CXX executable listParams[0m
+[ 82%] [32m[1mLinking CXX executable console[0m
+[ 82%] Built target listParams
+[ 85%] [32m[1mLinking CXX executable downloadUSDLogfile[0m
+[ 85%] Built target console
+[ 87%] [32m[1mLinking CXX executable battery[0m
+[ 90%] [32m[1mLinking CXX executable log[0m
+[ 90%] Built target downloadUSDLogfile
+[ 92%] [32m[1mLinking CXX executable setParam[0m
+[ 92%] Built target battery
+[ 92%] Built target log
+[ 92%] Built target setParam
+[ 95%] [32m[1mLinking CXX executable reboot[0m
+[ 95%] Built target reboot
+[ 97%] [32m[1mLinking CXX executable teleop[0m
+[ 97%] Built target teleop
+[100%] [32m[1mLinking CXX executable crazyflie_server[0m
+[100%] Built target crazyflie_server
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/lib/crazyflie/comCheck
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/lib/crazyflie/scan
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/lib/crazyflie/listParams
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/lib/crazyflie/listLogVariables
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/lib/crazyflie/listMemories
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/lib/crazyflie/reboot
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/lib/crazyflie/battery
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/lib/crazyflie/version
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/lib/crazyflie/console
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/lib/crazyflie/log
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/lib/crazyflie/setParam
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/lib/crazyflie/downloadUSDLogfile
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/lib/crazyflie/teleop
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/lib/crazyflie/crazyflie_server
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/lib/crazyflie/crazyflie_server.py
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/lib/crazyflie/chooser.py
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/lib/crazyflie/vel_mux.py
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/lib/crazyflie/cfmult.py
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie//launch/launch.py
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie//launch/launch_teleop2.py
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie//launch/teleop_launch.py
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie//config/config.rviz
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie//config/crazyflies.yaml
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie//config/crazyflies_formation.yaml
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie//config/motion_capture.yaml
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie//config/server.yaml
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie//config/teleop.yaml
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/ament_index/resource_index/package_run_dependencies/crazyflie
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/ament_index/resource_index/parent_prefix_path/crazyflie
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie/environment/ament_prefix_path.sh
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie/environment/ament_prefix_path.dsv
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie/environment/path.sh
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie/environment/path.dsv
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie/local_setup.bash
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie/local_setup.sh
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie/local_setup.zsh
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie/local_setup.dsv
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie/package.dsv
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/ament_index/resource_index/packages/crazyflie
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie/cmake/crazyflieConfig.cmake
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie/cmake/crazyflieConfig-version.cmake
+-- Symlinking: /home/taka/crazyswarm_SimpleFlight/install/crazyflie/share/crazyflie/package.xml

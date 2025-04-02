@@ -1,0 +1,1 @@
+/home/taka/crazyswarm_SimpleFlight/build/crazyflie_interfaces/rosidl_generator_c/crazyflie_interfaces/srv/start_trajectory.h

@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "setupEnvironment",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "source /home/taka/crazyswarm_SimpleFlight/install/setup.bash && source /home/taka/.local/share/ov/pkg/isaac-sim-4.1.0/setup_python_env.sh && source /opt/ros/humble/setup.bash"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

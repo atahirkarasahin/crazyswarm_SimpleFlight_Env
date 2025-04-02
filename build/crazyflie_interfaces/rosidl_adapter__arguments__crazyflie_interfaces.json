@@ -1,0 +1,23 @@
+{
+  "package_name": "crazyflie_interfaces",
+  "non_idl_tuples": [
+    "/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces:msg/FullState.msg",
+    "/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces:msg/LogDataGeneric.msg",
+    "/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces:msg/Hover.msg",
+    "/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces:msg/LogBlock.msg",
+    "/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces:msg/Position.msg",
+    "/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces:msg/TrajectoryPolynomialPiece.msg",
+    "/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces:msg/VelocityWorld.msg",
+    "/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces:srv/GoTo.srv",
+    "/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces:srv/Land.srv",
+    "/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces:srv/NotifySetpointsStop.srv",
+    "/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces:srv/SetGroupMask.srv",
+    "/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces:srv/StartTrajectory.srv",
+    "/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces:srv/Stop.srv",
+    "/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces:srv/Takeoff.srv",
+    "/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces:srv/UpdateParams.srv",
+    "/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces:srv/UploadTrajectory.srv",
+    "/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces:srv/RemoveLogging.srv",
+    "/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces:srv/AddLogging.srv"
+  ]
+}

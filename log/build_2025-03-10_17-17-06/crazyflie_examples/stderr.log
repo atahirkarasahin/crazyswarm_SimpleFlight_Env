@@ -1,0 +1,2 @@
+/home/taka/.local/share/ov/pkg/isaac_sim-2022.2.0/kit/extscore/omni.kit.pip_archive/pip_prebundle/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(

@@ -1,0 +1,533 @@
+[0.063s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--cmake-args', '-DCMAKE_BUILD_TYPE=Release'][0m
+[0.063s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_BUILD_TYPE=Release'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x77dc200881f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x77dc2018a1d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x77dc2018a1d0>>, mixin_verb=('build',))[0m
+[0.170s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[0.170s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[0.170s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[0.170s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[0.170s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[0.170s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[0.170s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/taka/crazyswarm_SimpleFlight'
+[0.170s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[0.170s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[0.170s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[0.170s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[0.170s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[0.170s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[0.170s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[0.170s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[0.176s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[0.176s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[0.176s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[0.176s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[0.176s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[0.176s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[0.176s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[0.176s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie) by extension 'ignore'
+[0.176s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie) by extension 'ignore_ament_install'
+[0.176s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie) by extensions ['colcon_pkg']
+[0.176s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie) by extension 'colcon_pkg'
+[0.176s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie) by extensions ['colcon_meta']
+[0.176s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie) by extension 'colcon_meta'
+[0.176s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie) by extensions ['ros']
+[0.176s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie) by extension 'ros'
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'crazyflie' with type 'ros.ament_cmake' and name 'crazyflie'[0m
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie-firmware) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie-firmware) by extension 'ignore'
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie-firmware) by extension 'ignore_ament_install'
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie-firmware) by extensions ['colcon_pkg']
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie-firmware) by extension 'colcon_pkg'
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie-firmware) by extensions ['colcon_meta']
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie-firmware) by extension 'colcon_meta'
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie-firmware) by extensions ['ros']
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie-firmware) by extension 'ros'
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie-firmware) by extensions ['cmake', 'python']
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie-firmware) by extension 'cmake'
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie-firmware) by extension 'python'
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie-firmware) by extensions ['python_setup_py']
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie-firmware) by extension 'python_setup_py'
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_examples) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_examples) by extension 'ignore'
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_examples) by extension 'ignore_ament_install'
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_examples) by extensions ['colcon_pkg']
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_examples) by extension 'colcon_pkg'
+[0.178s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_examples) by extensions ['colcon_meta']
+[0.179s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_examples) by extension 'colcon_meta'
+[0.179s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_examples) by extensions ['ros']
+[0.179s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_examples) by extension 'ros'
+[0.179s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'crazyflie_examples' with type 'ros.ament_cmake' and name 'crazyflie_examples'[0m
+[0.179s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_interfaces) by extension 'ignore'
+[0.179s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_interfaces) by extension 'ignore_ament_install'
+[0.179s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_interfaces) by extensions ['colcon_pkg']
+[0.179s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_interfaces) by extension 'colcon_pkg'
+[0.179s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_interfaces) by extensions ['colcon_meta']
+[0.179s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_interfaces) by extension 'colcon_meta'
+[0.179s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_interfaces) by extensions ['ros']
+[0.179s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_interfaces) by extension 'ros'
+[0.179s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'crazyflie_interfaces' with type 'ros.ament_cmake' and name 'crazyflie_interfaces'[0m
+[0.179s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_py) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_py) by extension 'ignore'
+[0.180s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_py) by extension 'ignore_ament_install'
+[0.180s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_py) by extensions ['colcon_pkg']
+[0.180s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_py) by extension 'colcon_pkg'
+[0.180s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_py) by extensions ['colcon_meta']
+[0.180s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_py) by extension 'colcon_meta'
+[0.180s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_py) by extensions ['ros']
+[0.180s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_py) by extension 'ros'
+[0.180s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'crazyflie_py' with type 'ros.ament_python' and name 'crazyflie_py'[0m
+[0.180s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_sim) by extension 'ignore'
+[0.180s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_sim) by extension 'ignore_ament_install'
+[0.180s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_sim) by extensions ['colcon_pkg']
+[0.180s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_sim) by extension 'colcon_pkg'
+[0.180s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_sim) by extensions ['colcon_meta']
+[0.180s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_sim) by extension 'colcon_meta'
+[0.180s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_sim) by extensions ['ros']
+[0.180s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(crazyflie_sim) by extension 'ros'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'crazyflie_sim' with type 'ros.ament_cmake' and name 'crazyflie_sim'[0m
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extension 'ignore'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extension 'ignore_ament_install'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extensions ['colcon_pkg']
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extension 'colcon_pkg'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extensions ['colcon_meta']
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extension 'colcon_meta'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extensions ['ros']
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extension 'ros'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extensions ['cmake', 'python']
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extension 'cmake'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extension 'python'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extensions ['python_setup_py']
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs) by extension 'python_setup_py'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/generated) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/generated) by extension 'ignore'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/generated) by extension 'ignore_ament_install'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/generated) by extensions ['colcon_pkg']
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/generated) by extension 'colcon_pkg'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/generated) by extensions ['colcon_meta']
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/generated) by extension 'colcon_meta'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/generated) by extensions ['ros']
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/generated) by extension 'ros'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/generated) by extensions ['cmake', 'python']
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/generated) by extension 'cmake'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/generated) by extension 'python'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/generated) by extensions ['python_setup_py']
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/generated) by extension 'python_setup_py'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/howto) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/howto) by extension 'ignore'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/howto) by extension 'ignore_ament_install'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/howto) by extensions ['colcon_pkg']
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/howto) by extension 'colcon_pkg'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/howto) by extensions ['colcon_meta']
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/howto) by extension 'colcon_meta'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/howto) by extensions ['ros']
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/howto) by extension 'ros'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/howto) by extensions ['cmake', 'python']
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/howto) by extension 'cmake'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/howto) by extension 'python'
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/howto) by extensions ['python_setup_py']
+[0.181s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/howto) by extension 'python_setup_py'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/images) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/images) by extension 'ignore'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/images) by extension 'ignore_ament_install'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/images) by extensions ['colcon_pkg']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/images) by extension 'colcon_pkg'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/images) by extensions ['colcon_meta']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/images) by extension 'colcon_meta'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/images) by extensions ['ros']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/images) by extension 'ros'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/images) by extensions ['cmake', 'python']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/images) by extension 'cmake'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/images) by extension 'python'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/images) by extensions ['python_setup_py']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/images) by extension 'python_setup_py'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/tutorials) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/tutorials) by extension 'ignore'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/tutorials) by extension 'ignore_ament_install'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/tutorials) by extensions ['colcon_pkg']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/tutorials) by extension 'colcon_pkg'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/tutorials) by extensions ['colcon_meta']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/tutorials) by extension 'colcon_meta'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/tutorials) by extensions ['ros']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/tutorials) by extension 'ros'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/tutorials) by extensions ['cmake', 'python']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/tutorials) by extension 'cmake'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/tutorials) by extension 'python'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/tutorials) by extensions ['python_setup_py']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs/tutorials) by extension 'python_setup_py'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2) by extension 'ignore'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2) by extension 'ignore_ament_install'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2) by extensions ['colcon_pkg']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2) by extension 'colcon_pkg'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2) by extensions ['colcon_meta']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2) by extension 'colcon_meta'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2) by extensions ['ros']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2) by extension 'ros'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2) by extensions ['cmake', 'python']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2) by extension 'cmake'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2) by extension 'python'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2) by extensions ['python_setup_py']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2) by extension 'python_setup_py'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2/images) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2/images) by extension 'ignore'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2/images) by extension 'ignore_ament_install'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2/images) by extensions ['colcon_pkg']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2/images) by extension 'colcon_pkg'
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2/images) by extensions ['colcon_meta']
+[0.182s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2/images) by extension 'colcon_meta'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2/images) by extensions ['ros']
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2/images) by extension 'ros'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2/images) by extensions ['cmake', 'python']
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2/images) by extension 'cmake'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2/images) by extension 'python'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2/images) by extensions ['python_setup_py']
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(docs2/images) by extension 'python_setup_py'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(prebuilt) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(prebuilt) by extension 'ignore'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(prebuilt) by extension 'ignore_ament_install'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(prebuilt) by extensions ['colcon_pkg']
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(prebuilt) by extension 'colcon_pkg'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(prebuilt) by extensions ['colcon_meta']
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(prebuilt) by extension 'colcon_meta'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(prebuilt) by extensions ['ros']
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(prebuilt) by extension 'ros'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(prebuilt) by extensions ['cmake', 'python']
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(prebuilt) by extension 'cmake'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(prebuilt) by extension 'python'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(prebuilt) by extensions ['python_setup_py']
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(prebuilt) by extension 'python_setup_py'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws) by extension 'ignore'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws) by extension 'ignore_ament_install'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws) by extensions ['colcon_pkg']
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws) by extension 'colcon_pkg'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws) by extensions ['colcon_meta']
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws) by extension 'colcon_meta'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws) by extensions ['ros']
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws) by extension 'ros'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws) by extensions ['cmake', 'python']
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws) by extension 'cmake'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws) by extension 'python'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws) by extensions ['python_setup_py']
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws) by extension 'python_setup_py'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src) by extension 'ignore'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src) by extension 'ignore_ament_install'
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src) by extensions ['colcon_pkg']
+[0.183s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src) by extension 'colcon_pkg'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src) by extensions ['colcon_meta']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src) by extension 'colcon_meta'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src) by extensions ['ros']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src) by extension 'ros'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src) by extensions ['cmake', 'python']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src) by extension 'cmake'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src) by extension 'python'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src) by extensions ['python_setup_py']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src) by extension 'python_setup_py'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm) by extension 'ignore'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm) by extension 'ignore_ament_install'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm) by extensions ['colcon_pkg']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm) by extension 'colcon_pkg'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm) by extensions ['colcon_meta']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm) by extension 'colcon_meta'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm) by extensions ['ros']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm) by extension 'ros'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm) by extensions ['cmake', 'python']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm) by extension 'cmake'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm) by extension 'python'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm) by extensions ['python_setup_py']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm) by extension 'python_setup_py'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/launch) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/launch) by extension 'ignore'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/launch) by extension 'ignore_ament_install'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/launch) by extensions ['colcon_pkg']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/launch) by extension 'colcon_pkg'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/launch) by extensions ['colcon_meta']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/launch) by extension 'colcon_meta'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/launch) by extensions ['ros']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/launch) by extension 'ros'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/launch) by extensions ['cmake', 'python']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/launch) by extension 'cmake'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/launch) by extension 'python'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/launch) by extensions ['python_setup_py']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/launch) by extension 'python_setup_py'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts) by extension 'ignore'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts) by extension 'ignore_ament_install'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts) by extensions ['colcon_pkg']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts) by extension 'colcon_pkg'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts) by extensions ['colcon_meta']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts) by extension 'colcon_meta'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts) by extensions ['ros']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts) by extension 'ros'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts) by extensions ['cmake', 'python']
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts) by extension 'cmake'
+[0.184s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts) by extension 'python'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts) by extensions ['python_setup_py']
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts) by extension 'python_setup_py'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing2_pps) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing2_pps) by extension 'ignore'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing2_pps) by extension 'ignore_ament_install'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing2_pps) by extensions ['colcon_pkg']
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing2_pps) by extension 'colcon_pkg'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing2_pps) by extensions ['colcon_meta']
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing2_pps) by extension 'colcon_meta'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing2_pps) by extensions ['ros']
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing2_pps) by extension 'ros'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing2_pps) by extensions ['cmake', 'python']
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing2_pps) by extension 'cmake'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing2_pps) by extension 'python'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing2_pps) by extensions ['python_setup_py']
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing2_pps) by extension 'python_setup_py'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing4_pps) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing4_pps) by extension 'ignore'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing4_pps) by extension 'ignore_ament_install'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing4_pps) by extensions ['colcon_pkg']
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing4_pps) by extension 'colcon_pkg'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing4_pps) by extensions ['colcon_meta']
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing4_pps) by extension 'colcon_meta'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing4_pps) by extensions ['ros']
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing4_pps) by extension 'ros'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing4_pps) by extensions ['cmake', 'python']
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing4_pps) by extension 'cmake'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing4_pps) by extension 'python'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing4_pps) by extensions ['python_setup_py']
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/crossing4_pps) by extension 'python_setup_py'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories) by extension 'ignore'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories) by extension 'ignore_ament_install'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories) by extensions ['colcon_pkg']
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories) by extension 'colcon_pkg'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories) by extensions ['colcon_meta']
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories) by extension 'colcon_meta'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories) by extensions ['ros']
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories) by extension 'ros'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories) by extensions ['cmake', 'python']
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories) by extension 'cmake'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories) by extension 'python'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories) by extensions ['python_setup_py']
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories) by extension 'python_setup_py'
+[0.185s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/1) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/1) by extension 'ignore'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/1) by extension 'ignore_ament_install'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/1) by extensions ['colcon_pkg']
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/1) by extension 'colcon_pkg'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/1) by extensions ['colcon_meta']
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/1) by extension 'colcon_meta'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/1) by extensions ['ros']
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/1) by extension 'ros'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/1) by extensions ['cmake', 'python']
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/1) by extension 'cmake'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/1) by extension 'python'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/1) by extensions ['python_setup_py']
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/1) by extension 'python_setup_py'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/2) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/2) by extension 'ignore'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/2) by extension 'ignore_ament_install'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/2) by extensions ['colcon_pkg']
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/2) by extension 'colcon_pkg'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/2) by extensions ['colcon_meta']
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/2) by extension 'colcon_meta'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/2) by extensions ['ros']
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/2) by extension 'ros'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/2) by extensions ['cmake', 'python']
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/2) by extension 'cmake'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/2) by extension 'python'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/2) by extensions ['python_setup_py']
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/2) by extension 'python_setup_py'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/3) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/3) by extension 'ignore'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/3) by extension 'ignore_ament_install'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/3) by extensions ['colcon_pkg']
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/3) by extension 'colcon_pkg'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/3) by extensions ['colcon_meta']
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/3) by extension 'colcon_meta'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/3) by extensions ['ros']
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/3) by extension 'ros'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/3) by extensions ['cmake', 'python']
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/3) by extension 'cmake'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/3) by extension 'python'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/3) by extensions ['python_setup_py']
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/3) by extension 'python_setup_py'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/4) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/4) by extension 'ignore'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/4) by extension 'ignore_ament_install'
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/4) by extensions ['colcon_pkg']
+[0.186s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/4) by extension 'colcon_pkg'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/4) by extensions ['colcon_meta']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/4) by extension 'colcon_meta'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/4) by extensions ['ros']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/4) by extension 'ros'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/4) by extensions ['cmake', 'python']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/4) by extension 'cmake'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/4) by extension 'python'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/4) by extensions ['python_setup_py']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/4) by extension 'python_setup_py'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/5) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/5) by extension 'ignore'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/5) by extension 'ignore_ament_install'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/5) by extensions ['colcon_pkg']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/5) by extension 'colcon_pkg'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/5) by extensions ['colcon_meta']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/5) by extension 'colcon_meta'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/5) by extensions ['ros']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/5) by extension 'ros'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/5) by extensions ['cmake', 'python']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/5) by extension 'cmake'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/5) by extension 'python'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/5) by extensions ['python_setup_py']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/5) by extension 'python_setup_py'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/6) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/6) by extension 'ignore'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/6) by extension 'ignore_ament_install'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/6) by extensions ['colcon_pkg']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/6) by extension 'colcon_pkg'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/6) by extensions ['colcon_meta']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/6) by extension 'colcon_meta'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/6) by extensions ['ros']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/6) by extension 'ros'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/6) by extensions ['cmake', 'python']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/6) by extension 'cmake'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/6) by extension 'python'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/6) by extensions ['python_setup_py']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/6) by extension 'python_setup_py'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/7) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/7) by extension 'ignore'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/7) by extension 'ignore_ament_install'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/7) by extensions ['colcon_pkg']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/7) by extension 'colcon_pkg'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/7) by extensions ['colcon_meta']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/7) by extension 'colcon_meta'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/7) by extensions ['ros']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/7) by extension 'ros'
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/7) by extensions ['cmake', 'python']
+[0.187s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/7) by extension 'cmake'
+[0.188s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/7) by extension 'python'
+[0.188s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/7) by extensions ['python_setup_py']
+[0.188s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/sequence_trajectories/7) by extension 'python_setup_py'
+[0.188s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/swap6v_pps) by extensions ['ignore', 'ignore_ament_install']
+[0.188s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/swap6v_pps) by extension 'ignore'
+[0.188s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/swap6v_pps) by extension 'ignore_ament_install'
+[0.188s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/swap6v_pps) by extensions ['colcon_pkg']
+[0.188s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/swap6v_pps) by extension 'colcon_pkg'
+[0.188s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/swap6v_pps) by extensions ['colcon_meta']
+[0.188s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/swap6v_pps) by extension 'colcon_meta'
+[0.188s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/swap6v_pps) by extensions ['ros']
+[0.188s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/swap6v_pps) by extension 'ros'
+[0.188s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/swap6v_pps) by extensions ['cmake', 'python']
+[0.188s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/swap6v_pps) by extension 'cmake'
+[0.188s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/swap6v_pps) by extension 'python'
+[0.188s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/swap6v_pps) by extensions ['python_setup_py']
+[0.188s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(ros_ws/src/crazyswarm/scripts/swap6v_pps) by extension 'python_setup_py'
+[0.188s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[0.188s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[0.188s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[0.188s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[0.188s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[0.196s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) check parameters
+[0.196s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) discover
+[0.198s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 386 installed packages in /opt/ros/humble[0m
+[0.199s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) using defaults
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_interfaces' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'crazyflie_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/taka/crazyswarm_SimpleFlight/build/crazyflie_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces', 'merge_install': False, 'path': '/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces', 'symlink_install': True, 'test_result_base': None}[0m
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie' build argument 'cmake_target' from command line to 'None'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie' build argument 'cmake_clean_cache' from command line to 'False'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie' build argument 'cmake_clean_first' from command line to 'False'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie' build argument 'cmake_force_configure' from command line to 'False'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie' build argument 'ament_cmake_args' from command line to 'None'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie' build argument 'catkin_cmake_args' from command line to 'None'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'crazyflie' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/taka/crazyswarm_SimpleFlight/build/crazyflie', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/taka/crazyswarm_SimpleFlight/install/crazyflie', 'merge_install': False, 'path': '/home/taka/crazyswarm_SimpleFlight/crazyflie', 'symlink_install': True, 'test_result_base': None}[0m
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_py' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_py' build argument 'cmake_target' from command line to 'None'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_py' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_py' build argument 'cmake_clean_cache' from command line to 'False'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_py' build argument 'cmake_clean_first' from command line to 'False'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_py' build argument 'cmake_force_configure' from command line to 'False'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_py' build argument 'ament_cmake_args' from command line to 'None'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_py' build argument 'catkin_cmake_args' from command line to 'None'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_py' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.220s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'crazyflie_py' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/taka/crazyswarm_SimpleFlight/build/crazyflie_py', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/taka/crazyswarm_SimpleFlight/install/crazyflie_py', 'merge_install': False, 'path': '/home/taka/crazyswarm_SimpleFlight/crazyflie_py', 'symlink_install': True, 'test_result_base': None}[0m
+[0.221s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_sim' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.221s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_sim' build argument 'cmake_target' from command line to 'None'
+[0.221s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_sim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.221s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_sim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.221s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_sim' build argument 'cmake_clean_first' from command line to 'False'
+[0.221s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_sim' build argument 'cmake_force_configure' from command line to 'False'
+[0.221s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_sim' build argument 'ament_cmake_args' from command line to 'None'
+[0.221s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_sim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.221s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_sim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.221s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'crazyflie_sim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/taka/crazyswarm_SimpleFlight/build/crazyflie_sim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/taka/crazyswarm_SimpleFlight/install/crazyflie_sim', 'merge_install': False, 'path': '/home/taka/crazyswarm_SimpleFlight/crazyflie_sim', 'symlink_install': True, 'test_result_base': None}[0m
+[0.221s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_examples' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.221s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_examples' build argument 'cmake_target' from command line to 'None'
+[0.221s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_examples' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.221s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_examples' build argument 'cmake_clean_cache' from command line to 'False'
+[0.221s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_examples' build argument 'cmake_clean_first' from command line to 'False'
+[0.221s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_examples' build argument 'cmake_force_configure' from command line to 'False'
+[0.221s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_examples' build argument 'ament_cmake_args' from command line to 'None'
+[0.221s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_examples' build argument 'catkin_cmake_args' from command line to 'None'
+[0.221s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'crazyflie_examples' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.221s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'crazyflie_examples' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/taka/crazyswarm_SimpleFlight/build/crazyflie_examples', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/taka/crazyswarm_SimpleFlight/install/crazyflie_examples', 'merge_install': False, 'path': '/home/taka/crazyswarm_SimpleFlight/crazyflie_examples', 'symlink_install': True, 'test_result_base': None}[0m
+[0.221s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[0.222s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[0.222s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces' with build type 'ament_cmake'
+[0.222s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces'
+[0.223s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.223s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.223s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.229s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/taka/crazyswarm_SimpleFlight/build/crazyflie_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(crazyswarm_simple) /usr/bin/cmake /home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces[0m
+[1.371s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/taka/crazyswarm_SimpleFlight/build/crazyflie_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(crazyswarm_simple) /usr/bin/cmake /home/taka/crazyswarm_SimpleFlight/crazyflie_interfaces -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces[0m
+[1.372s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/taka/crazyswarm_SimpleFlight/build/crazyflie_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(crazyswarm_simple) /usr/bin/cmake --build /home/taka/crazyswarm_SimpleFlight/build/crazyflie_interfaces -- -j20 -l20[0m
+[1.577s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/taka/crazyswarm_SimpleFlight/build/crazyflie_interfaces' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(crazyswarm_simple) /usr/bin/cmake --build /home/taka/crazyswarm_SimpleFlight/build/crazyflie_interfaces -- -j20 -l20[0m
+[1.577s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(crazyflie_interfaces)
+[1.578s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces' for CMake module files
+[1.579s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces' for CMake config files
+[1.579s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces/bin'
+[1.579s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces/lib/pkgconfig/crazyflie_interfaces.pc'
+[1.579s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces/lib/python3.10/site-packages'
+[1.579s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces/bin'
+[1.579s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces/share/crazyflie_interfaces/package.ps1'
+[1.580s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces/share/crazyflie_interfaces/package.dsv'
+[1.580s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces/share/crazyflie_interfaces/package.sh'
+[1.580s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces/share/crazyflie_interfaces/package.bash'
+[1.581s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces/share/crazyflie_interfaces/package.zsh'
+[1.581s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/taka/crazyswarm_SimpleFlight/install/crazyflie_interfaces/share/colcon-core/packages/crazyflie_interfaces)
+[1.591s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[1.591s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[1.591s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '2'[0m
+[1.591s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[1.595s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.595s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.595s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'notify2'
+[1.603s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[1.603s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/taka/crazyswarm_SimpleFlight/install/local_setup.ps1'
+[1.603s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/taka/crazyswarm_SimpleFlight/install/_local_setup_util_ps1.py'
+[1.604s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/taka/crazyswarm_SimpleFlight/install/setup.ps1'
+[1.605s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/taka/crazyswarm_SimpleFlight/install/local_setup.sh'
+[1.605s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/taka/crazyswarm_SimpleFlight/install/_local_setup_util_sh.py'
+[1.605s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/taka/crazyswarm_SimpleFlight/install/setup.sh'
+[1.606s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/taka/crazyswarm_SimpleFlight/install/local_setup.bash'
+[1.606s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/taka/crazyswarm_SimpleFlight/install/setup.bash'
+[1.606s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/taka/crazyswarm_SimpleFlight/install/local_setup.zsh'
+[1.606s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/taka/crazyswarm_SimpleFlight/install/setup.zsh'

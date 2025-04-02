@@ -1,0 +1,1 @@
+/home/taka/crazyswarm_SimpleFlight/crazyflie/scripts/crazyflie_server.py

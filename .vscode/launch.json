@@ -1,0 +1,46 @@
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "type": "debugpy",
+//             "request": "launch",
+//             "name": "Launch Main Training Script",
+//             "program": "/home/taka/SimpleFlight/scripts/train.py",
+//             "console": "integratedTerminal",
+//             "args": [
+//                 "headless=true",
+//                 "wandb.mode=disabled",
+//                 "total_frames=50000",
+//                 "task=Hover"
+//             ]
+//         }
+//     ]
+// }
+
+{
+    "configurations": [
+
+        {
+            "name": "Debug SimpleFlight",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/home/taka/crazyswarm_SimpleFlight/crazyflie_examples/crazyflie_examples/rl_track_v2.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "BASH_ENV": "${workspaceFolder}/setup_env.sh"
+            }
+            // "env": {
+            //     "BASH_ENV": "source /home/taka/crazyswarm_SimpleFlight/install/setup.bash"
+            // }
+            //"preLaunchTask": "setupEnvironment"
+        },
+        {
+            "type": "debugpy",
+            "request": "launch",
+            "name": "Launch Plot Script",
+            "program": "/home/taka/crazyswarm_SimpleFlight/crazyflie_examples/crazyflie_examples/plot_data.py",
+            "console": "integratedTerminal"
+        }
+    ]
+}

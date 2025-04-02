@@ -1,0 +1,36 @@
+seed: 42
+algo:
+  name: mappo
+simulation:
+  use_fake_hover: true
+  use_fake_track: true
+  swarm_init: true
+  track_steps: 3500
+  takeoff_steps: 500
+  land_steps: 600
+env:
+  dt: 0.01
+  cmd_fre: 100
+  rpy_scale: 180
+  min_thrust: 0.0
+  max_thrust: 0.9
+  swarm:
+    connection: true
+    test: false
+agent_spec:
+  drone:
+    state_dim: 12
+    action_dim: 4
+checkpoints:
+  takeoff_ckpt: /home/taka/crazyswarm_SimpleFlight/crazyflie_examples/crazyflie_examples/model/Hover.pt
+  policy_ckpt: /home/taka/crazyswarm_SimpleFlight/crazyflie_examples/crazyflie_examples/model/deploy.pt
+logging:
+  level: INFO
+  output_dir: /home/taka/simulation_output/
+  save_freq: 100
+policy:
+  type: MAPPO
+  device: cuda
+  load_from_ckpt: true
+debug: false
+verbose: true

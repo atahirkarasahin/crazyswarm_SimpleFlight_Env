@@ -1,0 +1,30 @@
+headless: false
+use_local_usd: false
+model_dir: null
+total_frames: 9000000000
+max_iters: -1
+eval_interval: -1
+save_interval: 100
+seed: 0
+viewer:
+  resolution:
+  - 960
+  - 720
+  eye:
+  - 0.0
+  - 2.0
+  - 2.5
+  lookat:
+  - 0.0
+  - 0.0
+  - 1.0
+wandb:
+  group: ${oc.select:..task.name}
+  run_name: hover
+  job_type: train
+  entity: chenjy
+  project: sim2real
+  mode: disabled
+  run_id: null
+  monitor_gym: true
+  tags: null
